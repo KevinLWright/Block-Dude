@@ -1,0 +1,58 @@
+
+<html>
+<head>
+<title>Block Dude</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
+<link rel="apple-touch-icon" href="icon.png">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10129038-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type='text/javascript' src='levels.js'></script>
+<script type='text/javascript' src='blockdude.js'></script>
+<script type='text/javascript'>
+function onLoad() {
+  //gaLoad();
+  var a = document.getElementById('controls');
+  var b = document.getElementById('controlsmini');
+  var c = document.getElementById('blockdude');
+  var d = document.getElementById('blockmini');
+  if(!a || !b || !c || !d) return;
+  if(isMobile()) {
+    a.style.display = 'none'; b.style.display = '';
+  } else {
+    a.style.display = ''; b.style.display = 'none';
+  }
+  createGame([c,d]);
+  windowRotated();
+}
+</script>
+</head>
+<body onload='onLoad()'>
+<center>
+<table border=0 cellspacing=1 cellpadding=1 width=1>
+<tr><td align=center>
+<div id='blockdude' class='blockdude'></div>
+<div id='blockmini' style='display:none' class='blockdude'></div>
+</td></tr>
+<small>
+<div id='controls'>
+<div id='controlsmini' style='display:none'>
+</div>
+</small>
+</table>
+</center>
+<img id='crosshairs' style='display: none' class='crosshairs' src='images/crosshairs.png' alt='X'>
+</body>
+</html>
