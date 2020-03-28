@@ -1,8 +1,11 @@
+html, 
 body {
   font-family: Courier, monospace;
   font-size: 11pt;
   -webkit-text-size-adjust: none;
   overscroll-behavior: none;
+  margin: 0;
+  height: 100%;
   overflow: hidden
 }
 
