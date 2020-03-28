@@ -2,6 +2,7 @@ body {
   font-family: Courier, monospace;
   font-size: 11pt;
   -webkit-text-size-adjust: none;
+  overscroll-behavior: contain;
 }
 
 small {
