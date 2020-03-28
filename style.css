@@ -34,13 +34,17 @@ a:hover {
 .blockdude {
   position: relative;
   border: solid 1px black;
-  overscroll-behavior
+  overscroll-behavior: none;
+  margin: 0;
+  height: 100%;
   overflow: hidden
 }
 
 .blockcell {
   position: absolute;
-  overscroll-behavior
+  overscroll-behavior: none;
+  margin: 0;
+  height: 100%;
   overflow: hidden
 }
 
