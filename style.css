@@ -2,7 +2,7 @@ body {
   font-family: Courier, monospace;
   font-size: 11pt;
   -webkit-text-size-adjust: none;
-  overscroll-behavior-y: none;
+  overscroll-behavior: none;
 }
 
 small {
@@ -30,10 +30,12 @@ a:hover {
 .blockdude {
   position: relative;
   border: solid 1px black;
+  overscroll-behavior
 }
 
 .blockcell {
   position: absolute;
+  overscroll-behavior
 }
 
 .crosshairs {
