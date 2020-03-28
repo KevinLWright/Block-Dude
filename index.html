@@ -42,6 +42,13 @@ function onLoad() {
 </head>
 <body onload='onLoad()'>
 <center>
+<button id="goFS">Go fullscreen</button>
+<script>
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      document.body.requestFullscreen();
+  }, false);
+</script>
 <table border=0 cellspacing=1 cellpadding=1 width=1>
 <tr><td align=center>
 <div id='blockdude' class='blockdude'></div>
