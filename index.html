@@ -38,6 +38,13 @@ function onLoad() {
   createGame([c,d]);
   windowRotated();
 }
+
+
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      document.body.requestFullscreen();
+  }, false);
+
 </script>
 </head>
 <body onload='onLoad()'>
@@ -55,11 +62,5 @@ function onLoad() {
 </table>
 </center>
 <button id="goFS">Go fullscreen</button>
-<script>
-  var goFS = document.getElementById("goFS");
-  goFS.addEventListener("click", function() {
-      document.body.requestFullscreen();
-  }, false);
-</script>
 </body>
 </html>
