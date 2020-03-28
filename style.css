@@ -4,9 +4,6 @@ body {
   font-size: 11pt;
   -webkit-text-size-adjust: none;
   overscroll-behavior: none;
-  margin: 0;
-  height: 100%;
-  overflow: hidden
 }
 
 small {
@@ -35,17 +32,10 @@ a:hover {
   position: relative;
   border: solid 1px black;
   overscroll-behavior: none;
-  margin: 0;
-  height: 100%;
-  overflow: hidden
 }
 
 .blockcell {
   position: absolute;
-  overscroll-behavior: none;
-  margin: 0;
-  height: 100%;
-  overflow: hidden
 }
 
 .crosshairs {
