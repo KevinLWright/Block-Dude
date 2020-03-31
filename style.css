@@ -1,7 +1,7 @@
 .parent {
 display: grid;
-grid-template-columns: 5vw 2.5vw 5vw 2.5vw 5vw;
-grid-template-rows: 5vw 2.5vw 5vw 2.5vw 5vw;
+grid-template-columns: 10vh 5vh 10vh 5vh 10vh;
+grid-template-rows: 10vh 5vh 10vh 5vh 10vh;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
@@ -13,7 +13,7 @@ grid-row-gap: 0px;
 
 .parent2 {
 display: grid;
-grid-template-columns: 28% repeat(4, 1fr) 30%;
+grid-template-columns: 0% repeat(4, 1fr) 0%;
 grid-template-rows: 5% repeat(2, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
@@ -28,22 +28,22 @@ grid-row-gap: 0px;
 
 .fas.fa-caret-up{
   color: white !important;
-  font-size: 2.7em;
+  font-size: 5.4em;
 }
 
 .fas.fa-caret-down{
   color: white !important;
-  font-size: 2.7em;
+  font-size: 5.4em;
 }
 
 .fas.fa-caret-right{
   color: white !important;
-  font-size: 2.7em;
+  font-size: 5.4em;
 }
 
 .fas.fa-caret-left{
   color: white !important;
-  font-size: 2.7em;
+  font-size: 5.4em;
 }
 
 
@@ -100,8 +100,8 @@ a:hover {
 	margin-bottom: 10px;
 	margin-left: 2px;
 	margin-right: 2px;
-	width: 10.0vw;
- height: 5.259vw;
+	width: 20vh;
+ height: 10.50vh;
 	border-radius: 50% 50% 50% 50% / 39% 39% 61% 61%;
 }
 
@@ -137,8 +137,8 @@ a:hover {
 	margin-bottom: 10px;
 	margin-left: 2px;
 	margin-right: 2px;
-	width: 10.0vw;
- height: 5.259vw;
+	width: 20vh;
+ height: 10.50vh;
 	border-radius: 50% 50% 50% 50% / 61% 61% 39% 39% ;
 }
 
@@ -174,8 +174,8 @@ a:hover {
 	margin-bottom: 10px;
 	margin-left: 2px;
 	margin-right: 2px;
-	width: 5.259vw;
- height: 10vw;
+	width: 10.50vh;
+ height: 20vh;
 	border-radius: 39% 61% 61% 39% / 50% 50% 50% 50% ;
 }
 
@@ -211,8 +211,8 @@ a:hover {
 	margin-bottom: 10px;
 	margin-left: 2px;
 	margin-right: 2px;
-	width: 5.259vw;
- height: 10vw;
+	width: 10.50vh;
+ height: 20vh;
 	border-radius: 61% 39% 39% 61% / 50% 50% 50% 50% ;
 }
 
@@ -248,8 +248,8 @@ a:hover {
 	margin-bottom: 10px;
 	margin-left: 2px;
 	margin-right: 2px;
-	width: 10vw;
-    height: 5.259vw;
+	width: 20vh;
+    height: 10.50vh;
 	border-radius: 15px;
 }
 
@@ -294,8 +294,8 @@ a:hover {
 	 z-index: 1;
 	 top: -6px;
 	 transition: all 40ms linear;
-	 width: 10vw;
-	 height: 5.85vw;
+	 width: 20vh;
+	 height: 10.5vh;
 	 border-radius: 15px;
 	 box-shadow: 0 0 0 1px #ffe79e inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #f9dc84, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
 	 background-color: #f9dc84;
@@ -318,7 +318,7 @@ a:hover {
 h1{
     font-family: helvetica neue, helvetica, arial, sans-serif;
 	font-weight: 200;
-    font-size: 3.2vw;
+    font-size: 6.4vh;
     color: white;
 }
 
@@ -326,14 +326,14 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5.85vw;
+    height: 10.5vh;
 }
 
 .flex-container2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1vw;
+    height: 2vh;
 }
   
 .noSelect {
