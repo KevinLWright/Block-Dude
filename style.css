@@ -13,18 +13,19 @@ grid-row-gap: 0px;
 
 .parent2 {
 display: grid;
-grid-template-columns: 0% repeat(4, 1fr) 0%;
+grid-template-columns: 10% repeat(2, 1fr) 2% repeat(2, 1fr) 10%;
 grid-template-rows: 5% repeat(2, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
 .div5 { grid-area: 2 / 1 / 4 / 2; }
-.div6 { grid-area: 3 / 2 / 4 / 4; align-self: center;}
-.div7 { grid-area: 2 / 2 / 3 / 4; align-self: center;}
-.div8 { grid-area: 2 / 4 / 4 / 6; justify-self: center;}
-.div9 { grid-area: 2 / 6 / 4 / 7; }
-.div10 { grid-area: 1 / 1 / 2 / 7; }
+.div6 { grid-area: 3 / 2 / 4 / 4; }
+.div7 { grid-area: 2 / 2 / 3 / 4; }
+.div8 { grid-area: 2 / 5 / 4 / 7; }
+.div9 { grid-area: 2 / 7 / 4 / 8; }
+.div10 { grid-area: 1 / 1 / 2 / 8; }
+.div11 { grid-area: 2 / 4 / 4 / 5; }
 
 .fas.fa-caret-up{
   color: white !important;
