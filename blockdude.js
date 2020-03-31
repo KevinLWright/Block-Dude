@@ -136,6 +136,42 @@ function step() {
     }
 }
 
+function stepleft() {
+  var targets = state.panning ? state.ifaces : [state.dude];
+    for(var i = 0; i < targets.length; i++) {
+	var target = targets[i];
+  target.left();
+    }
+}
+
+function stepright() {
+  var targets = state.panning ? state.ifaces : [state.dude];
+    for(var i = 0; i < targets.length; i++) {
+	var target = targets[i];
+  target.right();
+    }
+}
+
+function stepup() {
+  var targets = state.panning ? state.ifaces : [state.dude];
+    for(var i = 0; i < targets.length; i++) {
+	var target = targets[i];
+  target.up();
+    }
+}
+
+function restartLvl() {
+  setLevel(state.level||0);
+}
+
+function stepdown() {
+  var targets = state.panning ? state.ifaces : [state.dude];
+    for(var i = 0; i < targets.length; i++) {
+	var target = targets[i];
+  target.down();
+    }
+}
+
 function showCrosshairs(x,y) {
     x = x||0; y = y||0;
     var crosshairs = document.getElementById('crosshairs');
@@ -229,6 +265,25 @@ function keyup(e) {
     downkey = -1;
     clearInterval(keyitrv);
 }
+
+function myFunction() {
+  var checkBox = document.getElementById("light-switch");
+  if (checkBox.checked == true){
+	state.panning = true;
+	return;
+    downkey = (e.keyCode||e.charCode||-1);
+    step();
+    clearInterval(keyitrv);
+    keyitrv = setInterval(step,200);
+  } else {
+	state.panning = false;
+	for(var i = 0; i < state.ifaces.length; i++) state.ifaces[i].center();
+	return;
+    downkey = -1;
+    clearInterval(keyitrv);
+  }
+}
+
 
 function windowRotated() {
     doScroll();
