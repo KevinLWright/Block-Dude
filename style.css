@@ -340,6 +340,11 @@ h1{
     align-items: center;
     height: 2vh;
 }
+
+.flex-container3{
+    display: flex;
+    justify-content: center;
+}
   
 .noSelect {
     -webkit-touch-callout: none;
