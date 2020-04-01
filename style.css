@@ -298,7 +298,7 @@ a:hover {
 	 display: block;
 	 z-index: 1;
 	 top: -6px;
-	 transition: all 40ms linear;
+	 transition: all 1ms linear;
 	 width: 20vh;
 	 height: 10.5vh;
 	 border-radius: 15px;
