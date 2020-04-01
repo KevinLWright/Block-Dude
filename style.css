@@ -1,3 +1,7 @@
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+
 .parent {
 display: grid;
 grid-template-columns: 10vh 5vh 10vh 5vh 10vh;
