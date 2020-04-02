@@ -1,3 +1,21 @@
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1auto 1min-content 1auto;
+  grid-template-rows: 1min-content;
+  gap: 1px 1px;
+  grid-template-areas: "div12 div13 div14";
+}
+
+.div12 { grid-area: div12; }
+
+.div13 { grid-area: div13; }
+
+.div14 { grid-area: div14; }
+
 .parent {
 display: grid;
 grid-template-columns: 10vh 5vh 10vh 5vh 10vh;
