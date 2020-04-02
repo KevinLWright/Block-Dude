@@ -1,267 +1,85 @@
-.disable-dbl-tap-zoom {
-  touch-action: manipulation;
-}
-
-.parent {
-display: grid;
-grid-template-columns: 10vh 5vh 10vh 5vh 10vh;
-grid-template-rows: 10vh 5vh 10vh 5vh 10vh;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 6 / 3; align-self: center; justify-self:center;}
-.div2 { grid-area: 1 / 1 / 3 / 6; align-self: center; justify-self:center;}
-.div3 { grid-area: 1 / 4 / 6 / 6; align-self: center; justify-self:center;}
-.div4 { grid-area: 4 / 1 / 6 / 6; align-self: center; justify-self:center;}
-
-.parent2 {
-display: grid;
-grid-template-columns: auto 11vh 11vh 30px 18vh 18vh auto;
-grid-template-rows: 5% repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div5 { grid-area: 2 / 1 / 4 / 2; }
-.div6 { grid-area: 3 / 2 / 4 / 4; align-self: center; justify-self:center;}
-.div7 { grid-area: 2 / 2 / 3 / 4; justify-self:center;}
-.div8 { grid-area: 2 / 5 / 4 / 7; align-self: center; justify-self:center; }
-.div9 { grid-area: 2 / 7 / 4 / 8;}
-.div10 { grid-area: 1 / 1 / 2 / 8;}
-.div11 { grid-area: 2 / 4 / 4 / 5;}
-
-.fas.fa-caret-up{
-  color: white !important;
-  font-size: 5.4em;
-}
-
-.fas.fa-caret-down{
-  color: white !important;
-  font-size: 5.4em;
-}
-
-.fas.fa-caret-right{
-  color: white !important;
-  font-size: 5.4em;
-}
-
-.fas.fa-caret-left{
-  color: white !important;
-  font-size: 5.4em;
-}
-
-
-
-body {
-  font-family: Courier, monospace;
-  font-size: 11pt;
-  -webkit-text-size-adjust: none;
-  zoom: 85%;
-}
-
-small {
-  font-size: 8pt;
-}
-
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-a:visited {
-  color: rgb(0, 0, 205);
-}
-
-a:active {
-  color: red;
-}
-
-a:hover {
-  color: blue;
-  text-decoration: underline;
-}
-
-.blockdude {
-  position: relative;
-  border: solid 1px black;
-}
-
-.blockcell {
-  position: absolute;
-}
-
-.crosshairs {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.btn3d {
-	position: relative;
-	top: -6px;
-	border: 0;
-	transition: all 40ms linear;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	width: 20vh;
- height: 10.50vh;
-	border-radius: 50% 50% 50% 50% / 39% 39% 61% 61%;
-}
-
-.btn3d.btn-primary {
-	box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-	background-color: #4274D7;
-}
-
-.btn3d2 {
-	position: relative;
-	top: -6px;
-	border: 0;
-	transition: all 40ms linear;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	width: 20vh;
- height: 10.50vh;
-	border-radius: 50% 50% 50% 50% / 61% 61% 39% 39% ;
-}
-
-.btn3d2.btn-primary {
-	box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-	background-color: #4274D7;
-}
-
-.btn3d3 {
-	position: relative;
-	top: -6px;
-	border: 0;
-	transition: all 40ms linear;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	width: 10.50vh;
- height: 20vh;
-	border-radius: 39% 61% 61% 39% / 50% 50% 50% 50% ;
-}
-
-.btn3d3.btn-primary {
-	box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-	background-color: #4274D7;
-}
-
-.btn3d4 {
-	position: relative;
-	top: -6px;
-	border: 0;
-	transition: all 40ms linear;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	width: 10.50vh;
- height: 20vh;
-	border-radius: 61% 39% 39% 61% / 50% 50% 50% 50% ;
-}
-
-.btn3d4.btn-primary {
-	box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-	background-color: #4274D7;
-}
-
-.btn3d5 {
-	position: relative;
-	top: -6px;
-	border: 0;
-	transition: all 40ms linear;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	width: 20vh;
-    height: 10.50vh;
-	border-radius: 15px;
-}
-
-.btn3d5.btn-primary {
-	box-shadow: 0 0 0 1px #3b3b3b inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #303030, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-	background-color: #303030;
-}
-
-
-#light-switch {
-	 position: absolute;
-	 left: 0;
-	 top: 0;
-	 opacity: 0;
-}
- #light-switch:checked ~ #light-switch-label .switch {
-	 box-shadow: 0 0 0 1px #ffe79e inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
-	 background-color: #f9dc84;
-	 top: 2px;
-}
- #light-switch-label .switch {
-	 position: relative;
-	 display: block;
-	 z-index: 1;
-	 top: -6px;
-	 transition: all 40ms linear;
-	 width: 20vh;
-	 height: 10.5vh;
-	 border-radius: 15px;
-	 box-shadow: 0 0 0 1px #ffe79e inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #f9dc84, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-	 background-color: #f9dc84;
-}
- #light-switch-label .switch:before {
-
-	 display: block;
-	 position: absolute;
-	 height: 70px;
-	 text-align: center;
-	 line-height: 50px;
-	 width: 100px;
-	 top: 5px;
-	 left: 0;
-	 color: white;
-	 font-size: 1.5em;
-	 border-radius: 5px 5px 0 0;
-}
-  
-h1{
-    font-family: helvetica neue, helvetica, arial, sans-serif;
-	font-weight: 200;
-    font-size: 6.4vh;
-    color: white;
-}
-
-.flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10.5vh;
-}
-
-.flex-container2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2vh;
-}
-
-.flex-container3{
-    display: flex;
-    justify-content: center;
-}
-  
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+<html>
+   <head>
+      <title>Block Dude</title>
+      <link rel="stylesheet" href="style.css">
+      <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
+      <link rel="apple-touch-icon" href="icon.png">
+      <style>  </style>
+      <script type="text/javascript">
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-10129038-3']);
+         _gaq.push(['_trackPageview']);
+         
+         (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+         
+      </script>
+      <script type='text/javascript' src='levels.js'></script>
+      <script type='text/javascript' src='blockdude.js'></script>
+      <script type='text/javascript'>
+         function onLoad() {
+           //gaLoad();
+           var a = document.getElementById('controls');
+           var b = document.getElementById('controlsmini');
+           var c = document.getElementById('blockdude');
+           var d = document.getElementById('blockmini');
+           if(!a || !b || !c || !d) return;
+           if(isMobile()) {
+             a.style.display = 'none'; b.style.display = '';
+           } else {
+             a.style.display = ''; b.style.display = 'none';
+           }
+           createGame([c,d]);
+           windowRotated();
+         }
+      </script>
+      <script src="https://kit.fontawesome.com/8e23da6814.js" crossorigin="anonymous"></script>
+   </head>
+   <body onload='onLoad()'>
+      <center>
+         <table border=0 cellspacing=1 cellpadding=1 width=1>
+            <tr>
+               <td align=center>
+                  <div id='blockdude' class='blockdude'></div>
+                  <div id='blockmini' style='display:none' class='blockdude'></div>
+               </td>
+            </tr>
+            <small>
+               <div id='controls'></div>
+               <div id='controlsmini' style='display:none'></div>
+            </small>
+         </table>
+         <div class="parent2 noSelect">
+            <div class="div5"> </div>
+            <div class="div6">
+               <button id="button4" class="btn btn-primary btn-lg btn3d5" onclick="restartLvl()">
+                  <h1 class="flex-container2 noSelect">DEL</h1>
+               </button>
+            </div>
+            <div class="div7">
+               <input type="checkbox" id="light-switch" onclick="myFunction()">
+               <label for="light-switch" id="light-switch-label">
+                  <div class="switch">
+                     <h1 class="flex-container noSelect">2nd</h1>
+                  </div>
+               </label>
+            </div>
+            <div class="div8">
+               <div class="parent">
+                  <div class="div1">  <button id="button1" class="btn btn-primary btn-lg btn3d3"onclick="stepleft()"><i class="fas fa-caret-left"></i></button> </div>
+                  <div class="div2"><button id="button3" class="btn btn-primary btn-lg btn3d" onclick="stepup()"><i class="fas fa-caret-up"></i></button> </div>
+                  <div class="div3"><button id="button2" class="btn btn-primary btn-lg btn3d4" onclick="stepright()"><i class="fas fa-caret-right"></i></button> </div>
+                  <div class="div4">  <button id="button4" class="btn btn-primary btn-lg btn3d2" onclick="stepdown()"><i class="fas fa-caret-down"></i></button> </div>
+               </div>
+            </div>
+            <div class="div9"></div>
+            <div class="div10"></div>
+            <div class="div11"></div>
+         </div>
+      </center>
+   </body>
+</html>
