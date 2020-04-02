@@ -190,8 +190,8 @@ function Interface(env, w, h, cw, ch) {
 	this.env = env;
 	this.w = w || 0;
 	this.h = h || 0;
-	this.cw = cw || 20;
-	this.ch = ch || 20;
+	this.cw = cw || 26;
+	this.ch = ch || 26;
 	this.env = env;
 	this.pan = null;
 	this.centerOn = null;
