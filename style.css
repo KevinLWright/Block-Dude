@@ -111,6 +111,13 @@ a:hover {
 	border-radius: 50% 50% 50% 50% / 39% 39% 61% 61%;
 }
 
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+	-moz-outline-style: none;
+	outline: medium none;
+}
+
 .btn3d.btn-primary {
 	box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
 	background-color: #4274D7;
