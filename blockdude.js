@@ -4,7 +4,7 @@ var keyitrv;
 var state = {};
 
 function isMobile() {
-	if (navigator.userAgent.match(/Mobile\//)) return false;
+	if (navigator.userAgent.match(/Mobile\//)) return true;
 	return false;
 }
 
