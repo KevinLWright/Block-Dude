@@ -17,7 +17,7 @@ function createGame(containers) {
 	state.panning = false;
 	state.levels = BLOCK_LEVELS;
 	if (isMobile()) {
-		state.ifaces = [new Interface(null, 18, 10), new Interface(null, 12, 6)];
+		state.ifaces = [new Interface(null, 18, 10), new Interface(null, 18, 10)];
 	} else {
 		state.ifaces = [new Interface(null, 18, 12)];
 	}
